@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #f0fdf4;
+  /* Light green background */
+}
+
+.gradient-green {
+  background: linear-gradient(to right, #10b981, #059669);
+  /* Emerald to Darker Green */
+}
+
+.signInBtn {
+  @apply bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full flex items-center space-x-2 transition duration-300
+}
+
+.signOutBtn {
+  @apply bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-full flex items-center space-x-2 transition duration-300
+}
+
+.signInBtn:hover {
+  cursor: pointer;
+}
+
+.signOutBtn:hover {
+  cursor: pointer;
+}
+
+.text-gradient-green {
+  background: linear-gradient(to right, #10b981, #059669);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-full font-semibold transition duration-150 ease-in-out;
+  background-color: #10b981;
+  /* Emerald green */
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #059669;
+  /* Darker green */
+  box-shadow: 0 6px 20px 0 rgba(5, 150, 105, 0.4);
+  cursor: pointer;
+}
+
+.streak-button {
+  @apply px-4 py-2 rounded-lg font-semibold text-white transition duration-150 ease-in-out;
+  background-color: #34d399;
+  /* Light green */
+}
+
+.streak-button:hover {
+  background-color: #10b981;
+  /* Emerald green */
+  cursor: pointer;
+}
